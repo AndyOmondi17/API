@@ -2,7 +2,7 @@ CREATE DATABASE api;
 \c org;
 
 CREATE TABLE departments (
- id SERIAL PRIMARY KEY ,
+ id SERIAL PRIMARY KEY,
  dpt_name VARCHAR,
  dpt_description VARCHAR,
  dpt_empNo INT
@@ -23,8 +23,8 @@ CREATE TABLE  news (
  dpt_id INTEGER
 );
 
-CREATE TABLE  departments_employees (
- id SERIAL PRIMARY KEY ,
+CREATE TABLE  departments_employees(
+ id SERIAL PRIMARY KEY,
  dpt_id INTEGER,
  emp_id INTEGER
 );
