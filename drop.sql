@@ -1,1 +1,3 @@
 DROP DATABASE api;
+
+DROP DATABASE api_test;

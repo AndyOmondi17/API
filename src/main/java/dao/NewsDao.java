@@ -11,9 +11,9 @@ public interface NewsDao {
     //Find news
     News findByiId(int id);
     //get dpt news
-    List<News> getAllNews();
+    List<News>getAllNews();
     //update
-    void updateNews(int id, String news_name, String news_content,int department_id);
+    void updateNews(int id, String news_name, String news_content,int dpt_id);
 
     //delete
     void deleteById(int id);

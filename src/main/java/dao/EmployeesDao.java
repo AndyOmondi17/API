@@ -7,11 +7,11 @@ import java.util.List;
 
 public interface EmployeesDao{
     //create
-   //  void add(Employees employees);
+    void add(Employees employees);
 
     //Get and find all employees ...by id
     List<Employees>getAllEmployees();
-    //Employees findById(int id);
+    Employees findById(int id);
 
     //Add and get employees to department
     void addEmpToDepartments(Employees employees, Departments departments);

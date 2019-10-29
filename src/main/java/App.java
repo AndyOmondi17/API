@@ -8,7 +8,7 @@ import models.Employees;
 import models.News;
 import org.sql2o.Sql2o;
 
-import java.sql.Connection;
+import org.sql2o.Connection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,7 +17,7 @@ import static spark.Spark.*;
 
 public class App {
     public static void main(String[] args) {
-       Sql2oDepartmentsDao departmentsDao;
+        Sql2oDepartmentsDao departmentsDao;
         Sql2oNewsDao newsDao;
         Sql2oEmployeesDao employeesDao;
         Connection conn;
@@ -29,7 +29,7 @@ public class App {
         departmentsDao = new Sql2oDepartmentsDao(sql2o);
         employeesDao = new Sql2oEmployeesDao(sql2o);
         newsDao = new Sql2oNewsDao(sql2o);
-        conn = (Connection) sql2o.open();
+        conn = sql2o.open();
 
         //create
         post("/departments/new", "application/json", (req, res) -> {

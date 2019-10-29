@@ -1,5 +1,5 @@
 CREATE DATABASE api;
-\c org;
+\c api;
 
 CREATE TABLE departments (
  id SERIAL PRIMARY KEY,
@@ -27,4 +27,6 @@ CREATE TABLE  departments_employees(
  id SERIAL PRIMARY KEY,
  dpt_id INTEGER,
  emp_id INTEGER
-);
+ );
+
+ CREATE DATABASE api_test WITH TEMPLATE api;
